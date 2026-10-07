@@ -21,7 +21,7 @@ button { font: inherit; }
 .skip-link { position: absolute; top: -48px; left: 16px; z-index: 10; padding: 8px 14px; background: var(--ink); color: white; }
 .skip-link:focus { top: 12px; }
 
-.site-header { min-height: 82px; padding: 0 7.1%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(24, 60, 59, .1); background: var(--paper); position: relative; z-index: 5; }
+.site-header { min-height: 82px; padding: 0 7.1%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(24, 60, 59, .1); background: var(--paper); position: sticky; top: 0; z-index: 5; }
 .brand { display: inline-flex; align-items: center; gap: 11px; flex-shrink: 0; }
 .brand-mark { width: 35px; height: 35px; border-radius: 50%; display: grid; place-items: center; background: var(--coral); position: relative; }
 .brand-mark span:first-child { position: absolute; width: 15px; height: 4px; border-radius: 3px; background: var(--white); }
@@ -126,7 +126,9 @@ h1 em, h2 em, .promise-band em { color: var(--coral); font-weight: 500; }
 .contact-detail:first-child { border-top: 1px solid rgba(255, 255, 255, .2); }
 .detail-icon { width: 35px; height: 35px; flex: 0 0 35px; display: grid; place-items: center; border-radius: 50%; background: rgba(255, 255, 255, .1); color: var(--yellow); font-size: 18px; }
 .detail-label { color: #a9c3b7; font-size: 9px; letter-spacing: 1px; font-weight: 700; }
-.contact-detail p { margin: 3px 0 0; font-size: 13px; }
+.contact-detail p { margin: 3px 0 0; font-size: 13px; line-height: 1.55; }
+.contact-detail a { color: inherit; text-decoration: underline; text-decoration-color: rgba(239, 212, 119, .7); text-underline-offset: 3px; }
+.contact-detail a:hover { color: var(--yellow); }
 .contact-decoration { position: absolute; right: -30px; bottom: -77px; color: rgba(255, 255, 255, .08); font-size: 180px; line-height: 1; }
 
 .site-footer { min-height: 88px; padding: 18px 7.1%; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: var(--white); }
